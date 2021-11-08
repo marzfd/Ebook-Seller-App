@@ -1,0 +1,22 @@
+{
+  "name": "ebook-seller",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.13.0"
+  },
+  "description": "App to sell ebooks.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Marzieh Fadaee",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "stripe": "^8.186.1"
+  }
+}

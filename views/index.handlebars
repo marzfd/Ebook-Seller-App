@@ -1,0 +1,30 @@
+<section class="py-2">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <h1 class="display-3 mt-3 pt-3">Ebook Seller</h1>
+        <p>A web development project to learn BackEnd !
+          <span style="font-size:12px;font-style:italic">(Inspired by Traversy Media)</span>
+        </p>
+        <form action="/charge" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js"
+            class="stripe-button"
+            data-key="{{stripePublishableKey}}"
+            data-amount="1000"
+            data-name="Ebook Seller"
+            data-description="Ebook Seller written by Marzieh !"
+            data-image="/img/marketplace.png"
+            data-locale="auto">
+          </script>
+          <script>
+            // Hide default stripe button
+            document.querySelector('.stripe-button-el').style.display = 'none';
+          </script>
+          <button type="submit" class="btn btn-dark mt-3">Purchase Now for 10$</button>
+        </form>
+      </div>
+      <div class="col-md-6 text-center pt-2">
+        <img src="/img/ebook.png" style="width:50%;" alt="ebook" class="img-fluid">
+      </div>
+     </div>
+</section>
